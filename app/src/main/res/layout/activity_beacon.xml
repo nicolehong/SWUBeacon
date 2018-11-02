@@ -1,0 +1,111 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchBeaconActivity" >
+
+    <RelativeLayout
+        android:id="@+id/subLayoutB1"
+        tools:context=".MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:nestedScrollingEnabled="true"
+        android:background="#080e3a"
+        android:onClick="onMainClicked">
+
+        <Button
+            android:id="@+id/scanBeaconBackButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/sub_back"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/scanBeacontopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:text="Scan Beacon"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/subLayoutB2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:nestedScrollingEnabled="true"
+        android:layout_below="@+id/subLayoutB1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/scanBeacon"
+            android:background="@drawable/scan_beacon"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_gravity="right"
+            android:onClick="onScanBeaconClicked"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/textScanBeacon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan Beacon"
+            android:textSize="18dp"
+            android:textColor="#080e3a"
+            android:paddingLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/scanBeacon"
+            android:layout_toEndOf="@+id/scanBeacon"
+            android:layout_marginLeft="5dp" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/subLayoutB3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/subLayoutB2">
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp" />
+
+    <ScrollView
+        android:id="@+id/svResultHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="3.67dp" >
+
+        <TextView
+            android:id="@+id/tvResultOut"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:textSize="10dp" />
+    </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>
+

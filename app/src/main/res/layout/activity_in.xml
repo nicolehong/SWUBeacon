@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#080e3a">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/sub_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:text="IN"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="분실물찾기"
+        android:id="@+id/btn1"
+        android:layout_weight="0.12"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="아이들관리"
+        android:id="@+id/btn"
+        android:layout_weight="0.12"
+        android:clickable="true"
+        android:background="#78c4b8b8"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="도서관빈자리"
+        android:id="@+id/btn3"
+        android:clickable="true"
+        android:layout_weight="0.12"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="주차장"
+        android:id="@+id/btn4"
+        android:clickable="true"
+        android:background="#78c4b8b8"
+        android:layout_weight="0.12"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="출튀방지"
+        android:id="@+id/btn5"
+        android:clickable="true"
+        android:layout_weight="0.12"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="드론"
+        android:id="@+id/btn6"
+        android:clickable="true"
+        android:background="#78c4b8b8"
+        android:layout_weight="0.12"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="0.3"
+        android:clickable="true">
+
+        <Button
+            android:id="@+id/Search"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/search_beacon"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="64dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="onSearchBeaconClicked"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/Setting"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/sub_setting"
+            android:onClick="onSettingButtonClicked"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/Execute"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/sub_execute"
+            android:layout_marginRight="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="true" />
+    </RelativeLayout>
+
+</LinearLayout>

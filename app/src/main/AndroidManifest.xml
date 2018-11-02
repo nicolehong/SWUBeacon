@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.androidtown.beaflexlistview"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <!-- For BLE Scan -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SWUBEACON_PBL"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".MainActivity"
+            android:label="SWUBEACON_PBL" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" > </activity>
+
+        <activity
+            android:name=".ChildActivity"> </activity>
+
+        <xml
+            android:name=".activity_setting"> </xml>
+        <activity
+            android:name=".SettingActivity"> </activity>
+        <activity
+            android:name=".InActivity"> </activity>
+        <activity
+            android:name=".ConfActivity"> </activity>
+
+        <activity
+            android:name=".SearchBeaconActivity"> </activity>
+
+
+        <service
+            android:name="com.hanamicron.beacon.bluetooth.BLEScanService"
+            android:exported="false" />
+        <service
+            android:name="BackgroundService"
+            android:exported="false" />
+        <service
+            android:name="com.hanamicron.beacon.bluetooth.BLEScanService"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

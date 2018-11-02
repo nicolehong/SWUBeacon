@@ -1,0 +1,297 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".SettingActivity"
+    android:nestedScrollingEnabled="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/subLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity"
+        android:nestedScrollingEnabled="true"
+        android:background="#080e3a"
+        android:onClick="onMainClicked">
+
+        <Button
+            android:id="@+id/settingBackButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/sub_back"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="44dp" />
+
+        <TextView
+            android:id="@+id/settingTopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:text="Setting"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="95dp"
+            android:layout_marginRight="50dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/subLayout2_1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/subLayout01">
+
+        <TextView
+            android:id="@+id/subTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/subLayout2"
+            android:textColor="#080e3a"
+            android:textStyle="normal|bold"
+            android:textSize="17dp"
+            android:text="벨소리 선택"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:id="@+id/subRingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#01000000"
+            android:textSize="10dp"
+            android:text="ring" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/subLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+        android:nestedScrollingEnabled="true"
+        android:layout_below="@+id/subLayout2_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ToggleButton
+            android:id="@+id/sub_sound1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/sound1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp">
+        </ToggleButton>
+
+        <ToggleButton
+            android:id="@+id/sub_sound2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/sound2"
+            android:layout_centerHorizontal="true">
+        </ToggleButton>
+
+
+        <ToggleButton
+            android:id="@+id/sub_sound3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sound3"
+            android:layout_marginRight="40dp"
+            >
+        </ToggleButton>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/subLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+        android:nestedScrollingEnabled="true"
+        android:layout_above="@+id/subLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp"
+            android:textColor="#080e3a"
+            android:textSize="12dp"
+            android:text="경고음"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#080e3a"
+            android:textSize="12dp"
+            android:text="자명종"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp"
+            android:textColor="#080e3a"
+            android:textSize="12dp"
+            android:text="멜로디"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/subLayout5"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+        android:nestedScrollingEnabled="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#080e3a"
+        android:layout_marginLeft="35dp">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/subLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+        android:nestedScrollingEnabled="true"
+        android:layout_below="@+id/subLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/subTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/subLayout2"
+            android:textColor="#080e3a"
+            android:textStyle="normal|bold"
+            android:textSize="17dp"
+            android:text="시간 설정"
+            android:layout_marginTop="30dp" />
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/subLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+        android:nestedScrollingEnabled="true"
+        android:layout_below="@+id/subLayout6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/pickTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="#ff000000"
+            android:textSize="15dp"
+            android:text="알람 시간 설정"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/timeDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pickTime"
+            android:layout_centerVertical="true"
+            android:textColor="#080e3a"
+            android:textStyle="normal"
+            android:textSize="20dp"
+            android:text="00:00"
+            android:clickable="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        tools:context=".MainActivity"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:nestedScrollingEnabled="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/subLayout7">
+
+        <TextView
+            android:id="@+id/mainDistanceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:textSize="35dp"
+            android:text="5"
+            android:layout_marginLeft="24dp"
+            android:layout_alignBottom="@+id/mainMinus"
+            android:layout_toRightOf="@+id/mainPlus"
+            android:layout_toEndOf="@+id/mainPlus"
+            android:layout_marginStart="24dp" />
+
+        <Button
+            android:id="@+id/mainMinus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/minus"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/mainPlus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/plus"
+            android:layout_alignBottom="@+id/mainDistanceValue"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="거리 설정"
+            android:id="@+id/textView11"
+            android:textStyle="bold|normal"
+            android:textSize="17dp"
+            android:textColor="#080e3a"
+            android:layout_marginBottom="31dp"
+            android:layout_above="@+id/mainPlus"
+            android:layout_alignLeft="@+id/mainPlus"
+            android:layout_alignStart="@+id/mainPlus" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
